@@ -4,13 +4,11 @@ import { Question } from "../models/Question.js"
 class QuestionService {
     async getQuestions(id) {
 
-        const response = await fetch(`https://opentdb.com/api.php?amount=10&category=${id}`)
-        console.log(response)
+        const response = await fetch(`https://opentdb.com/api.php?amount=10&category=${id}&type=multiple`)
         const data = await response.json()
-        console.log(data.results)
         let newQuestions = data.results.map(question => new Question(question))
-        console.log(newQuestions)
         AppState.questions = newQuestions
+        console.log(AppState.questions)
     }
 }
 

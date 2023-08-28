@@ -12,8 +12,6 @@ function _drawQuestions() {
 
 export class QuestionsController {
     constructor() {
-        console.log('hello')
-        this.getQuestions()
         AppState.on("questions", _drawQuestions)
     }
     async getQuestions(id) {
