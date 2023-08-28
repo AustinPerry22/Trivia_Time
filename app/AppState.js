@@ -12,6 +12,8 @@ class ObservableAppState extends EventEmitter {
 
   questions = []
 
+  activeQuestion = {}
+
   // NOTE Used to load initial data
   init() {
 

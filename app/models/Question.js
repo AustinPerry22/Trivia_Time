@@ -11,12 +11,12 @@ export class Question {
         <button class="col-10 card">${this.prompt}</button>
       </section>
       <section class="row justify-content-evenly pb-5">
-        <button class="col-4 btn btn-primary">${this.randomAnswer[0]}</button>
-        <button class="col-4 btn btn-primary">${this.randomAnswer[1]}</button>
+        <button class="col-4 btn btn-primary" onclick="app.QuestionsController.submitAnswer('${this.randomAnswer[0]}')">${this.randomAnswer[0]}</button>
+        <button class="col-4 btn btn-primary" onclick="app.QuestionsController.submitAnswer('${this.randomAnswer[1]}')">${this.randomAnswer[1]}</button>
       </section>
       <section class="row justify-content-evenly pb-5">
-        <button class="col-4 btn btn-primary">${this.randomAnswer[2]}</button>
-        <button class="col-4 btn btn-primary">${this.randomAnswer[3]}</button>
+        <button class="col-4 btn btn-primary" onclick="app.QuestionsController.submitAnswer('${this.randomAnswer[2]}')">${this.randomAnswer[2]}</button>
+        <button class="col-4 btn btn-primary" onclick="app.QuestionsController.submitAnswer('${this.randomAnswer[3]}')">${this.randomAnswer[3]}</button>
       </section>
         `
     }
