@@ -9,6 +9,9 @@ class ObservableAppState extends EventEmitter {
   /** @type {import('./models/Value.js').Value[]} */
   values = loadState('values', [Value])
 
+
+  questions = []
+
   // NOTE Used to load initial data
   init() {
 
