@@ -14,7 +14,7 @@ export class Question {
         <button class="col-4 btn btn-primary">${this.correctAnswer}</button>
         <button class="col-4 btn btn-primary">${this.incorrectAnswers[0]}</button>
       </section>
-      <section class="row justify-content-evenly">
+      <section class="row justify-content-evenly pb-5">
         <button class="col-4 btn btn-primary">${this.incorrectAnswers[1]}</button>
         <button class="col-4 btn btn-primary">${this.incorrectAnswers[2]}</button>
       </section>

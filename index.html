@@ -15,9 +15,21 @@
   <title>Trivia_Time</title>
 </head>
 
-<body>
+<body class="bg-dark">
   <!-- SECTION -->
-
+  <header class="container-fluid text-center">
+    <section class="row">
+      <div class="col-4">
+        <button class="btn btn-light" onclick="app.QuestionsController.getQuestions('10')">Books</button>
+      </div>
+      <div class="col-4">
+        <button class="btn btn-light" onclick="app.QuestionsController.getQuestions('11')">Film</button>
+      </div>
+      <div class="col-4">
+        <button class="btn btn-light" onclick="app.QuestionsController.getQuestions('15')">Video Games</button>
+      </div>
+    </section>
+  </header>
 
   <!-- SECTION -->
   <main id="router-view" class="container-fluid">

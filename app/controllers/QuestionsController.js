@@ -16,7 +16,7 @@ export class QuestionsController {
         this.getQuestions()
         AppState.on("questions", _drawQuestions)
     }
-    async getQuestions() {
-        questionService.getQuestions()
+    async getQuestions(id) {
+        questionService.getQuestions(id)
     }
 }
